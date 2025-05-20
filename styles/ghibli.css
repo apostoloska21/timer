@@ -1,7 +1,15 @@
 body {
-  background: linear-gradient(120deg, #f5f3e7 0%, #e3e0d3 100%);
+  background:
+    linear-gradient(120deg, #f5f3e7 0%, #e3e0d3 100%),
+    url('../../public/image_1.jpg') left top/400px auto no-repeat,
+    url('../../public/image_2.jpg') right bottom/600px auto no-repeat,
+    url('../../public/image_3.png') center center/500px auto no-repeat;
   min-height: 100vh;
   font-family: 'Quicksand', Arial, sans-serif;
+  background-blend-mode: lighten, lighten, lighten, normal;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed;
+  opacity: 1;
 }
 
 .ghibli-shadow {
